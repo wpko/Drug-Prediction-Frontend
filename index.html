@@ -55,6 +55,7 @@
             throw new Error("Network response was not ok"+response.statusText);
           }
           const result = await response.json();
+          console.log("Prediction Result:",result);
           document.getElementById("result").innerText = "Recommended Drug: ${result.prediction}";
         }
         catch(error)
