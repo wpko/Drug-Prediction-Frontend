@@ -57,7 +57,7 @@
           const result = await response.json();
           console.log("Prediction Result:",result);
           console.log(result.prediction);
-          document.getElementById("result").innerText = "Recommended Drug: ${result.prediction}";
+          document.getElementById("result").innerHTML = "Recommended Drug: ${result.prediction}";
         }
         catch(error)
         {
